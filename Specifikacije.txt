@@ -1,0 +1,50 @@
+Aplikacija za teretanu GYM4U
+
+
+Specifikacija programa
+
+Program se zove GYM4U i njegova svrha služi zaposlenicima teratane kako bi mogli pratiti razne stvari vezane uz teretanu kao što su:informacije zaposlenika,
+broj članova teretane, razina članstva (silver, gold, platinum), usluga aktivnosti (korištenje sprava, sauna, bazen, vrste treninga, korištenje dvorane za 
+timske sportove, masaža), dugotrajnost članstva(kad su započeli suradnju s teretanom i dokda traje) i usluga(npr. vrijeme za saunu, bazen ili dvorana za timske sportove).
+
+Informacije za App User-a:
+
+1) ADMIN: Aplikacija je napravljena za svakog zaposlenika teretane ali ne mogu svi zaposlenici imati jednake mogućnosti, prvo imamo Admina, to je osoba koja je šef teretane ili
+osoba od povjerenja. Ta pozicija u prgramu je povlaštena jer može u aplikaciji raditi stvari koje druge osobe ne mogu, kao što su dodavanje novog zaposlenika ili brisanje
+zaposlenika, isto tako moće promjeniti određene osobne podatke, npr. netko od zaposlenika se uda i promjeni svoje prezime, Admin može ući u program i promjeniti podatke.
+Isto tako Admin će imai mogućnost promjeniti autorizaciju drugog zaposlenika, moći će unaprijediti drugu osobu u Admina ili ju unazadit. Biti Admin aplikacije ti daje
+mogućnosti koje drugi user-i ne mogu koristiti ali Admin može koristiti sve druge mogućnosti koje mogu raditi drugi user-i.
+
+2) TRENER: Raznia ispod Admina bila bi Treneri. Njih u sustav dodaje Admin i dodjeli im mogućnosti aplikacije. Razlika između Admina i Trenera je to što Trener može dodavati/brisati/mjenjati
+podatke članova teretane, dok Admin može isto to i za zaposlenike teretane. Treneri će moći pratiti sve podatke vezane za korisnike teretane. Kad su se učlanili u teretanu,
+dokad im članstvo traje, koje aktivnosti koriste, te koju razinu članstva koriste.
+
+3) PROMATRAČ: To je osoba npr. poput računovođe koji nema dozvolu mjenjanja podataka ali može pristupiti podacima poput: liste zaposlenika ili lista članova. Uz listu članova
+može pratiti njihove mjesečne troškove.
+
+Razina članstva:
+
+Aplikacija će ponudit mogućnost za 3 vrste članstva a to su: Silver(standard), Gold(određene povlastice) i Platinum(neograničena usluga). Silver članstvo će biti regularno
+članstvo bez povlastica, to znaći da neće imati mogućnost dodatnih usluga poput saune, bazena. Njihove mogućnosti su korištenje sprava u teretani. Gold članstvo daje određene povlastice
+poput korištenja dvorane(košarka, nogomet, stolni tenis itd.), te različite vrste treninga (grupni, privatni). Platinum članstvo nudi sve mogućnosti teretane (masaža, bazen itd.), njihovo
+članstvo se veže na godinu dana.
+
+Arhitktura aplikacije:
+
+Aplikacija će bit napisan u programu Visual Studio (C#), prvobitni plan je da se napiše kod u MVC aplikaviji (ASP.NET), ako bude poteškoća aplikacija će se napisati u WebApp-u(.NET framework).
+Bazu podataka pravimo u programu SQL Server Managemetnt Studio, bazu povezujemo s našim programom.
+
+Kada otvoriš aplikaciju, prvo se moraš prijaviti, zaposlenik ce napraviti registraciju, a Admin će dobiti zahtijev za prijavu, kad Admin dopusti prijavu, zaposlenik će moći uci u aplikaciju.
+Plan je da aplikacija prikazuje iduće stvari. Kada otvorimo aplikaciju, prvo nas aplikacija tjera na prijavu (username i password), odma nam ispise sve članove teretane i njihovu vrstu članarine.
+Pored članarine imali bi 3 gumba poput: Edit (mogućnost promjene osobnih podataka), Details (popi informacija člana teretane) i Delete (brisanje člana teretane).
+Treba nam i tipka Create s kojom će mo napraviti novog člana teretane.
+  
+Kao Trener možeš mjenjati podatke članova teretane, kao Admin možemo isto to ali i za zaposlenike. Stoga moramo imati gumb kao što je Popis Zaposlenika (i Popis Članova-->otvara prozor ko za Trenera). 
+Otvora se lista zaposlenika a pored njih tipka Edit (mogućnost promjene autorizacije ili osobnih podataka) Details(popis informacija zaposlenika) i
+Delete(brisanje zaposlenika). Isto tako bit će tipka Create s kojom će Admin ubacivati nove zaposlenike (user-e) teretane.
+ 
+
+
+
+
+  
