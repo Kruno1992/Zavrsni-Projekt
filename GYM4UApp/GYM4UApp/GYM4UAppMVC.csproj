@@ -202,6 +202,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ActivityMembershipCardView.cs" />
+    <Compile Include="Models\ActivityView.cs" />
+    <Compile Include="Models\AppUserView.cs" />
+    <Compile Include="Models\MembershipCardView.cs" />
+    <Compile Include="Models\MembershipTypeView.cs" />
+    <Compile Include="Models\MemberView.cs" />
+    <Compile Include="Models\RoleView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="App_Start\Startup.cs" />
   </ItemGroup>

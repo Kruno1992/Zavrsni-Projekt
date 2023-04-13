@@ -127,8 +127,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IActivityMembershipCardModel.cs" />
+    <Compile Include="IActivityModel.cs" />
+    <Compile Include="IAppUserModel.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="IMemberModel.cs" />
+    <Compile Include="IMembershipCardModel.cs" />
+    <Compile Include="IMembershipTypeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IRoleModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

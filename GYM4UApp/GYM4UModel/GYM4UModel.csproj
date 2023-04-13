@@ -127,12 +127,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActivityMembershipCardModel.cs" />
+    <Compile Include="ActivityModel.cs" />
+    <Compile Include="AppUserModel.cs" />
+    <Compile Include="MemberModel.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="MembershipCardModel.cs" />
+    <Compile Include="MembershipTypeModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoleModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GYM4UModel.Common\GYM4UModel.Common.csproj">
+      <Project>{78b306f2-34c3-46d8-a058-e3fa831ca51e}</Project>
+      <Name>GYM4UModel.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
