@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GYM4U.Service.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,11 @@ namespace GYM4U.MVC.Controllers
 {
     public class AppUserController : Controller
     {
-        // GET: AppUser
-        public ActionResult Index()
+        protected IAppUserService Service { get; set; }
+
+        public AppUserController(IAppUserService service)
         {
-            return View();
+            Service = service;
         }
     }
 }

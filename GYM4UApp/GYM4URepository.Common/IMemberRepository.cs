@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GYM4UService
+namespace GYM4URepository.Common
 {
-    public class IContainer
+    internal interface IMemberRepository
     {
     }
 }

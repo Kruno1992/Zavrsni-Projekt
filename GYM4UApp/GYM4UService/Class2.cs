@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GYM4UService
 {
-    public class IContainer
+    internal class Class2
     {
     }
 }

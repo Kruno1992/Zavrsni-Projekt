@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GYM4U.Repository.Common
 {
-    public interface IActiviryRepository
+    public interface IActivityRepository
     {
     }
 }

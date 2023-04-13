@@ -5,9 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GYM4U.Repository
+namespace GYM4URepositpry
 {
-    public class MembershipTypeRepository : IMembershipTypeRepository
+    public class ActivityRepository : IActivityRepository
     {
+      
     }
 }

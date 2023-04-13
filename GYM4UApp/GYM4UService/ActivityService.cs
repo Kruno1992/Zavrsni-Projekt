@@ -6,13 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GYM4U.Service
+namespace GYM4UService
 {
-    public class MembershipTypeService : IMembershipTypeService
+    public class ActivityService : IActivityService
     {
-        protected IMembershipTypeRepository Repository { get; set; }
+        protected IActivityRepository Repository { get; set; }
 
-        public MembershipTypeService(IMembershipTypeRepository repository)
+        public ActivityService(IActivityRepository repository)
         {
             Repository = repository;
         }

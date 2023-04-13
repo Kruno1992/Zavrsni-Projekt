@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GYM4U.Service.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +9,11 @@ namespace GYM4U.MVC.Controllers
 {
     public class RoleController : Controller
     {
-        // GET: Role
-        public ActionResult Index()
+        protected IRoleService Service { get; set; }
+
+        public RoleController(IRoleService service)
         {
-            return View();
+            Service = service;
         }
     }
 }
